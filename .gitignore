@@ -1,0 +1,121 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Distribution / packaging
+build/
+dist/
+wheels/
+*.egg-info/
+.eggs/
+*.egg
+MANIFEST
+
+# Virtual environments (uv uses .venv by default)
+.venv/
+venv/
+ENV/
+env/
+.env/
+.conda/
+
+# uv
+.uv/
+uv.lock.tmp
+# NOTE: uv.lock SHOULD be committed for apps (FastAPI backend).
+# Do NOT ignore uv.lock. Same for .python-version.
+# If building a library (not your case), uncomment:
+# uv.lock
+
+# Environment variables / secrets - FastAPI / Uvicorn / Docker
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.pem
+*.key
+*.crt
+secrets/
+
+# FastAPI / Uvicorn / logs
+*.log
+logs/
+*.out
+
+# Databases (local dev sqlite)
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+
+# Uploads / media / temp (common in banking apps for KYC docs - don't commit)
+uploads/
+media/
+tmp/
+temp/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+*.cover
+.hypothesis/
+nosetests.xml
+test-results/
+junit*.xml
+
+# Type checkers / linters
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.pyre/
+.pytype/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+*.sublime-project
+*.sublime-workspace
+.spyproject/
+.ropeproject/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Docker
+.dockerignore.tmp
+
+# Node (if you add a frontend later)
+node_modules/
+dist_frontend/
+
+# Misc
+*.bak
+*.tmp
+*.orig
+.cache/
+
